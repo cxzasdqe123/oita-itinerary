@@ -194,9 +194,9 @@
 
   .ref-section, .table-section{ padding:20px 18px; margin-top:16px; }
   
-  table.fare-table{ width:100%; border-collapse:collapse; margin-top:14px; font-size:11.5px; border-radius:12px; overflow:hidden; }
+  table.fare-table{ width:100%; border-collapse:collapse; margin-top:14px; font-size:11.5px; border-radius:12px; overflow:hidden; table-layout:fixed; }
   table.fare-table th{ background:var(--teal); color:#fff; text-align:left; padding:9px 10px; font-weight:700; font-size:10.5px; white-space:nowrap; }
-  table.fare-table td{ padding:9px 10px; border-bottom:1px solid var(--border-medium); }
+  table.fare-table td{ padding:9px 10px; border-bottom:1px solid var(--border-medium); word-break:break-word; }
   table.fare-table td.name-col{ white-space:nowrap; font-weight:700; }
   table.fare-table tr:last-child td{ border-bottom:none; }
   table.fare-table tbody tr:nth-child(even){ background:rgba(247,247,247,0.6); }
@@ -968,27 +968,87 @@
   <div class="panel" id="panel-rooms">
     <div class="glass table-section">
       <div class="section-title">考察團分房表 ROOM ASSIGNMENT</div>
-      <table class="fare-table">
+      
+      <!-- 8/19 DAY 1 -->
+      <div style="margin-top:18px; margin-bottom:6px; font-size:12.5px; font-weight:700; color:var(--dark); display:flex; justify-content:space-between; align-items:center; border-left:3px solid var(--teal); padding-left:8px;">
+        <span>8/19（三）御宿割烹一竹</span>
+        <span style="font-size:11px; color:var(--text-teal); font-weight:700;">單人房</span>
+      </div>
+      <table class="fare-table" style="margin-top:6px;">
         <thead>
           <tr>
-            <th>姓名</th>
-            <th>8/19 房號</th>
-            <th>8/20 房號</th>
-            <th>8/21 房號</th>
+            <th style="width:50%;">姓名</th>
+            <th style="width:50%;">房號</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>宋文龍</td><td></td><td></td><td></td></tr>
-          <tr><td>陳彥宇</td><td></td><td></td><td></td></tr>
-          <tr><td>王太和</td><td></td><td></td><td></td></tr>
-          <tr><td>陳裕元</td><td></td><td></td><td></td></tr>
-          <tr><td>王聖元</td><td></td><td></td><td></td></tr>
-          <tr><td>林宥潔</td><td></td><td></td><td></td></tr>
-          <tr><td>吳岦穎</td><td></td><td></td><td></td></tr>
-          <tr><td>鄭若雁</td><td></td><td></td><td></td></tr>
-          <tr><td>王姿靜</td><td></td><td></td><td></td></tr>
-          <tr><td>簡伃彣</td><td></td><td></td><td></td></tr>
-          <tr><td>黃宜慧（導遊）</td><td></td><td></td><td></td></tr>
+          <tr><td>宋文龍</td><td></td></tr>
+          <tr><td>陳彥宇</td><td></td></tr>
+          <tr><td>王太和</td><td></td></tr>
+          <tr><td>陳裕元</td><td></td></tr>
+          <tr><td>王聖元</td><td></td></tr>
+          <tr><td>林宥潔</td><td></td></tr>
+          <tr><td>吳岦穎</td><td></td></tr>
+          <tr><td>鄭若雁</td><td></td></tr>
+          <tr><td>王姿靜</td><td></td></tr>
+          <tr><td>簡伃彣</td><td></td></tr>
+          <tr><td>黃宜慧（導遊）</td><td></td></tr>
+        </tbody>
+      </table>
+
+      <!-- 8/20 DAY 2 -->
+      <div style="margin-top:22px; margin-bottom:6px; font-size:12.5px; font-weight:700; color:var(--dark); display:flex; justify-content:space-between; align-items:center; border-left:3px solid var(--teal); padding-left:8px;">
+        <span>8/20（四）Wenavillage 久住</span>
+        <span style="font-size:11px; color:var(--text-teal); font-weight:700;">2~3人房</span>
+      </div>
+      <table class="fare-table" style="margin-top:6px;">
+        <thead>
+          <tr>
+            <th style="width:33.33%;">姓名</th>
+            <th style="width:33.33%;">房號</th>
+            <th style="width:33.34%;">同房夥伴</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>宋文龍</td><td></td><td></td></tr>
+          <tr><td>陳彥宇</td><td></td><td></td></tr>
+          <tr><td>王太和</td><td></td><td></td></tr>
+          <tr><td>陳裕元</td><td></td><td></td></tr>
+          <tr><td>王聖元</td><td></td><td></td></tr>
+          <tr><td>林宥潔</td><td></td><td></td></tr>
+          <tr><td>吳岦穎</td><td></td><td></td></tr>
+          <tr><td>鄭若雁</td><td></td><td></td></tr>
+          <tr><td>王姿靜</td><td></td><td></td></tr>
+          <tr><td>簡伃彣</td><td></td><td></td></tr>
+          <tr><td>黃宜慧（導遊）</td><td></td><td></td></tr>
+        </tbody>
+      </table>
+
+      <!-- 8/21 DAY 3 -->
+      <div style="margin-top:22px; margin-bottom:6px; font-size:12.5px; font-weight:700; color:var(--dark); display:flex; justify-content:space-between; align-items:center; border-left:3px solid var(--teal); padding-left:8px;">
+        <span>8/21（五）寒の地獄旅館</span>
+        <span style="font-size:11px; color:var(--text-teal); font-weight:700;">雙人房</span>
+      </div>
+      <table class="fare-table" style="margin-top:6px;">
+        <thead>
+          <tr>
+            <th style="width:33.33%;">姓名</th>
+            <th style="width:33.33%;">房號</th>
+            <th style="width:33.34%;">同房夥伴</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>宋文龍</td><td></td><td></td></tr>
+          <tr><td>陳彥宇</td><td></td><td></td></tr>
+          <tr><td>王太和</td><td></td><td></td></tr>
+          <tr><td>陳裕元</td><td></td><td></td></tr>
+          <tr><td>王聖元</td><td></td><td></td></tr>
+          <tr><td>林宥潔</td><td></td><td></td></tr>
+          <tr><td>吳岦穎</td><td></td><td></td></tr>
+          <tr><td>鄭若雁</td><td></td><td></td></tr>
+          <tr><td>王姿靜</td><td></td><td></td></tr>
+          <tr><td>簡伃彣</td><td></td><td></td></tr>
+          <tr><td>黃宜慧（導遊）</td><td></td><td></td></tr>
         </tbody>
       </table>
     </div>
