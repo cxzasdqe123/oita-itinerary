@@ -72,7 +72,7 @@
     height:114px;
     width:auto;
     max-width:90%;
-    margin:0 auto 0px;
+    margin:-18px auto -18px;
     object-fit:contain;
     filter:drop-shadow(0 2px 8px rgba(0,0,0,0.06));
   }
@@ -195,8 +195,9 @@
   .ref-section, .table-section{ padding:20px 18px; margin-top:16px; }
   
   table.fare-table{ width:100%; border-collapse:collapse; margin-top:14px; font-size:11.5px; border-radius:12px; overflow:hidden; }
-  table.fare-table th{ background:var(--teal); color:#fff; text-align:left; padding:9px 10px; font-weight:700; font-size:10.5px; }
+  table.fare-table th{ background:var(--teal); color:#fff; text-align:left; padding:9px 10px; font-weight:700; font-size:10.5px; white-space:nowrap; }
   table.fare-table td{ padding:9px 10px; border-bottom:1px solid var(--border-medium); }
+  table.fare-table td.name-col{ white-space:nowrap; font-weight:700; }
   table.fare-table tr:last-child td{ border-bottom:none; }
   table.fare-table tbody tr:nth-child(even){ background:rgba(247,247,247,0.6); }
   table.fare-table .nickname{ color:var(--text-gray); }
@@ -399,7 +400,7 @@
 
   @media (min-width:640px){
     body{ font-size:16px; }
-    .hero .logo{ height:138px; max-width:100%; }
+    .hero .logo{ height:138px; max-width:100%; margin:-22px auto -22px; }
     .day-header{ padding:22px 26px; }
     .day-body{ padding:8px 24px 22px; }
     .flight-section, .ref-section, .table-section{ padding:26px 24px; }
@@ -867,8 +868,8 @@
           <div class="qc-label">泡湯先沖澡<br>冷湯需泳裝</div>
         </div>
         <div class="quick-card">
-          <div class="icon-chip"><svg class="ico"><use href="#i-cup"/></svg></div>
-          <div class="qc-label">鄉間認現金<br>零錢別亂丟</div>
+          <div class="icon-chip"><svg class="ico"><use href="#i-info"/></svg></div>
+          <div class="qc-label">行動電源<br>隨身攜帶</div>
         </div>
         <div class="quick-card">
           <div class="icon-chip"><svg class="ico"><use href="#i-plane"/></svg></div>
@@ -946,18 +947,18 @@
     <div class="glass table-section">
       <div class="section-title">台灣側參加名單 PARTICIPANTS</div>
       <table class="fare-table">
-        <thead><tr><th>公司</th><th>姓名</th><th>暱稱</th><th>備註</th></tr></thead>
+        <thead><tr><th>公司</th><th>姓名</th><th>備註</th></tr></thead>
         <tbody>
-          <tr><td>極上旅行社</td><td>宋文龍</td><td class="nickname">—</td><td>總經理</td></tr>
-          <tr><td>荒野旅人國際旅行社</td><td>林宥潔</td><td class="nickname">Jessie</td><td>行銷企劃經理</td></tr>
-          <tr><td>中鼎旅行社</td><td>王姿靜</td><td class="nickname">—</td><td>線控經理</td></tr>
-          <tr><td>大洋旅行社</td><td>王聖元</td><td class="nickname">Chris</td><td>OP 組組長</td></tr>
-          <tr><td>鼎陞旅行社</td><td>鄭若雁</td><td class="nickname">—</td><td>經理</td></tr>
-          <tr><td>豐華旅行社</td><td>吳岦穎</td><td class="nickname">Rie</td><td>顧問</td></tr>
-          <tr><td>KOL / taiwan368</td><td>陳彥宇</td><td class="nickname">Ian</td><td>—</td></tr>
-          <tr><td>KOL / 樂咖旅遊</td><td>王太和</td><td class="nickname">Tyson</td><td>—</td></tr>
-          <tr><td>KOL / Frankucc</td><td>陳裕元</td><td class="nickname">Frank</td><td>—</td></tr>
-          <tr><td>KOL / 溫蒂</td><td>簡伃彣</td><td class="nickname">Wendy</td><td>—</td></tr>
+          <tr><td>極上旅行社</td><td class="name-col">宋文龍</td><td>總經理</td></tr>
+          <tr><td>荒野旅人國際旅行社</td><td class="name-col">林宥潔 Jessie</td><td>行銷企劃經理</td></tr>
+          <tr><td>中鼎旅行社</td><td class="name-col">王姿靜</td><td>線控經理</td></tr>
+          <tr><td>大洋旅行社</td><td class="name-col">王聖元 Chris</td><td>OP 組組長</td></tr>
+          <tr><td>鼎陞旅行社</td><td class="name-col">鄭若雁</td><td>經理</td></tr>
+          <tr><td>豐華旅行社</td><td class="name-col">吳岦穎 Rie</td><td>顧問</td></tr>
+          <tr><td>KOL / taiwan368</td><td class="name-col">陳彥宇 Ian</td><td>—</td></tr>
+          <tr><td>KOL / 樂咖旅遊</td><td class="name-col">王太和 Tyson</td><td>—</td></tr>
+          <tr><td>KOL / Frankucc</td><td class="name-col">陳裕元 Frank</td><td>—</td></tr>
+          <tr><td>KOL / 溫蒂</td><td class="name-col">簡伃彣 Wendy</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
@@ -976,17 +977,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>宋文龍</td><td>未定</td><td>未定</td><td>未定</td></tr>
-          <tr><td>陳彥宇</td><td>未定</td><td>未定</td><td>未定</td></tr>
-          <tr><td>王太和</td><td>未定</td><td>未定</td><td>未定</td></tr>
-          <tr><td>陳裕元</td><td>未定</td><td>未定</td><td>未定</td></tr>
-          <tr><td>王聖元</td><td>未定</td><td>未定</td><td>未定</td></tr>
-          <tr><td>林宥潔</td><td>未定</td><td>未定</td><td>未定</td></tr>
-          <tr><td>吳岦穎</td><td>未定</td><td>未定</td><td>未定</td></tr>
-          <tr><td>鄭若雁</td><td>未定</td><td>未定</td><td>未定</td></tr>
-          <tr><td>王姿靜</td><td>未定</td><td>未定</td><td>未定</td></tr>
-          <tr><td>簡伃彣</td><td>未定</td><td>未定</td><td>未定</td></tr>
-          <tr><td>黃宜慧（導遊）</td><td>未定</td><td>未定</td><td>未定</td></tr>
+          <tr><td>宋文龍</td><td></td><td></td><td></td></tr>
+          <tr><td>陳彥宇</td><td></td><td></td><td></td></tr>
+          <tr><td>王太和</td><td></td><td></td><td></td></tr>
+          <tr><td>陳裕元</td><td></td><td></td><td></td></tr>
+          <tr><td>王聖元</td><td></td><td></td><td></td></tr>
+          <tr><td>林宥潔</td><td></td><td></td><td></td></tr>
+          <tr><td>吳岦穎</td><td></td><td></td><td></td></tr>
+          <tr><td>鄭若雁</td><td></td><td></td><td></td></tr>
+          <tr><td>王姿靜</td><td></td><td></td><td></td></tr>
+          <tr><td>簡伃彣</td><td></td><td></td><td></td></tr>
+          <tr><td>黃宜慧（導遊）</td><td></td><td></td><td></td></tr>
         </tbody>
       </table>
     </div>
@@ -1060,7 +1061,7 @@ var itineraryDetails = {
   wenavillage: {
     title: "Wenavillage Kuju (ウェナヴィレッジくじゅう)",
     tag: "DAY 2 · 國立公園奢華Glamping",
-    image: "https://placehold.co/1200x675/3ABBCC/ffffff?text=Wenavillage+Kuju",
+    image: "https://cxzasdqe123.github.io/oita-itinerary/d2-wenavillege-kuju.webp",
     pdfUrl: "",
     content: "它是一間位於阿蘇九重國立公園內的高級 Glamping（豪華露營／自然度假）住宿設施。\n這裡最大的特色是把「大自然＋高級住宿＋戶外體驗」結合在一起。園區被九重的山林與草原包圍，適合想遠離城市、享受山景、星空和溫泉的人。\n\n🏡 住宿特色\n園區目前有7棟獨立私人小屋，共有5種房型，主打「住在大自然裡，但仍然享有飯店般的舒適」。部分房型設有：\n• 客房私人露天風呂\n• 私人桑拿\n• 廚房／Island Kitchen\n• 私人戶外木平台\n• 冷暖氣、浴室、廁所\n• 寵物友善房型及大型專用 Dog Run\n其中 Deluxe（2臥室＋桑拿）最多可住6人，非常適合家庭或朋友一起入住。\n\n🐶 很適合帶狗狗旅行\nWenavillage Kuju 有專門的寵物房型，例如 Dog Premium 和 Dog Suite。其中 Dog Premium 擁有約 890㎡私人 Dog Run，部分季節還有狗狗專用泳池，因此是九州比較適合帶大型犬一起旅行的 Glamping 選擇。\n\n🍖 食物\n住宿可以選擇包含晚餐、早餐的方案。晚餐主打大分／九重當地食材的 Glamping BBQ，例如：豐後牛、豬肉／スペアリブ、當季蔬菜、九州當地食材。餐點可以在自己的私人戶外空間享用，不需要和其他旅客共用餐廳。\n\n🌌 可以玩什麼？\n除了住宿之外，園區也有不少戶外活動：\n⭐ 星空觀察\n🔥 營火體驗\n🍕 Pizza 製作\n🚙 8輪越野車 Forest Coaster\n🚵 MTB Adventure\n🕹️ 復古遊戲\n另外，園區旁邊就是九重自然動物園，可以近距離接觸山羊、馬、綿羊、羊駝等動物，也可以體驗餵食。"
   },
@@ -1074,14 +1075,14 @@ var itineraryDetails = {
   guernsey: {
     title: "Guernsey Farm (ガンジー牧場)",
     tag: "DAY 3 · 珍稀黃金牛奶牧場",
-    image: "https://placehold.co/1200x675/F5C61E/ffffff?text=Guernsey+Farm",
+    image: "https://cxzasdqe123.github.io/oita-itinerary/d3-guernsey-farm.webp",
     pdfUrl: "",
     content: "「加恩西牧場／根西牧場」，日文正式名稱是「ガンジー牧場」。它位於日本大分縣竹田市久住町、九重連山（くじゅう連山）山麓的久住高原，是一座以珍稀「加恩西牛（Guernsey cattle）」為主題的觀光牧場。\n\n🐄 最大特色：珍稀的加恩西牛\nGuernsey（加恩西牛）原產於英國海峽群島的 Guernsey Island（根西島），在日本非常少見。大分縣的官方介紹指出，日本國內僅有數百頭左右，而ガンジー牧場就是少數飼養這種乳牛的牧場之一。\n\n加恩西牛的牛奶因乳脂肪等成分較豐富、味道濃郁，被稱為 「Golden Milk／ゴールデンミルク（金色牛奶）」。相較於荷斯坦牛，加恩西牛的產奶量較少，因此這種牛奶也顯得更加珍貴。\n\n🍦 必吃：Golden Milk 軟雪糕\n這裡 numerically 最有名的應該就是 「ガンジーソフトクリーム」加恩西牛奶軟雪糕。牧場使用 Golden Milk 製作軟雪糕，官方形容其特色是：奶味濃郁﹆口感滑順﹆甜味較有層次。\n\n吃完仍有明顯的奶香，在久住高原的自然景色中吃一支牧場鮮奶軟雪糕，是這裡最具代表性的體驗之一。是以日本少見的英國加恩西牛為主角，以「Golden Milk」乳製品聞名的觀光牧場；最值得體驗的是看牛、親近動物，以及品嚐濃郁的加恩西牛奶軟雪糕。"
   },
   kannojigoku: {
     title: "寒の地獄旅館",
     tag: "DAY 3 · 秘湯硫磺冷礦泉",
-    image: "https://placehold.co/1200x675/1b8c9c/ffffff?text=%E2%8A%A2%E4%B9%8B%E5%9C%B0%E7%8D%84%E6%97%85%E9%A4%A8",
+    image: "https://cxzasdqe123.github.io/oita-itinerary/d3-kannojigoku-hotel.webp",
     pdfUrl: "",
     content: "位於日本九州大分縣九重町，是一間以「超低溫冷泉＋薪火溫泉＋山間老旅館」聞名的秘湯旅館。它最大的特色，就是名字雖然叫「寒之地獄」，卻能讓你體驗非常特別的冷熱交替溫泉。\n\n♨️ 寒之地獄到底有多冷？\n旅館的源泉溫度只有約 13～14°C，泉質為單純硫磺冷礦泉，源泉湧出量非常大，每分鐘超過 2,000 公升。這也是它最具代表性的「冷泉」。\n\n傳統的泡法不是一直泡在冷水裡，而是：冷泉 → 暖房／火爐或桑拿 → 再泡溫泉。\n冷泉入水的最初一兩分鐘會非常刺激，身體逐漸適應後，配合暖房或桑拿讓身體回暖，形成獨特的冷熱交替體驗。現在旅館也設有「暖之地獄」薪火桑拿，讓這種體驗可以全年進行。\n\n⚠️ 冷泉並不是一般「舒服地泡熱湯」的溫泉，13～14°C 對不少人來說相當寒冷。若有心血管疾病、對低溫刺激敏感等情況，應先詢問醫師是否適合。"
   },
@@ -1095,7 +1096,7 @@ var itineraryDetails = {
   wildflower: {
     title: "九重 野之花之鄉",
     tag: "DAY 4 · 九重連山鄉土料理",
-    image: "https://placehold.co/1200x675/1b8c9c/ffffff?text=%E4%B9%9D%E9%87%8D%E9%87%8E%E4%B9%8B%E8%8A%B1%E4%B9%8B%E9%84%89",
+    image: "https://cxzasdqe123.github.io/oita-itinerary/d4-nonohananosato.webp",
     pdfUrl: "",
     content: "它位於九重連山山麓，是一個結合自然景觀、在地料理與伴手禮的觀光景點。九重野花之鄉位於日本九州大分縣玖珠郡九重町，坐落在雄偉的九重連山山麓，周圍是阿蘇九重地區豐富的自然景觀。這裡過去以觀賞四季山野草聞名，可以欣賞阿蘇九重地區的珍稀野生植物與各種季節花卉。\n\n🍱 最大特色：品嚐大分鄉土料理\n園內餐廳主打大分縣在地鄉土料理與山菜料理，使用當地新鮮食材，連調味料也相當講究。可以品嚐具有九州特色的料理。\n\n🌸 花與自然\n以前的野草園約有 4萬平方公尺，以自然山野、草原的形式保存阿蘇九重地區的珍稀植物，四季曾可觀賞約1,000種山野草，例如日本野生花卉與九重地區特有的植物。散步路線約15～60分鐘。"
   }
